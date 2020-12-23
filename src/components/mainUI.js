@@ -9,7 +9,7 @@ const MainUI = ({ route, navigation }) => {
         <View
             style={main_styles.parentView}
         >
-            <Text style={main_styles.whiteBigText}>Hello {username} </Text>
+            <Text style={[main_styles.whiteBigText, {alignSelf: 'center'}]}>Hello {username} </Text>
             <TouchableOpacity
                 style={main_styles.logOut}
                 onPress={() => { navigation.navigate("Sign In"); }}
@@ -26,7 +26,6 @@ const main_styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'space-evenly',
         backgroundColor: Colors.appTheme,
-        alignItems: 'center'
     },
 
     whiteBigText: {
