@@ -34,6 +34,8 @@ const SignUp = ({ navigation }) => {
     const [phone, setPhone] = useState('');
     const [isMale, setIsMale] = useState(true);
     const [isFemale, setIsFemale] = useState(false);
+    const [isOtherGender, setIsOtherGender] = useState(false);
+
 
     const checkIsBlank = () => {
         if (username == '' || password == '' || email == '' || phone == '')
@@ -41,6 +43,9 @@ const SignUp = ({ navigation }) => {
         return false;
     }
 
+    const selectGender = (gender) => {
+
+    }
 
     return (
         <View style={signup_style.main}>
