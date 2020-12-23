@@ -9,7 +9,7 @@ const MainUI = ({ route, navigation }) => {
         <View
             style={main_styles.parentView}
         >
-            <Text style={main_styles.whiteBigText}>Welcome back {username} </Text>
+            <Text style={main_styles.whiteBigText}>Welcome back, {username} </Text>
             <TouchableOpacity
                 style={main_styles.logOut}
                 onPress={() => { navigation.navigate("Sign In"); }}
